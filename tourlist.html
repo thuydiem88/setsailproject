@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours Search Page - Setsail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./asset/icons/themify-icons/themify-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <link rel="stylesheet" href="./asset/css/gird.css">
+    <!--dùng noUiSlider điều chỉnh price -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.1.0/nouislider.min.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <!-- <link rel="stylesheet" href="./asset/css/style.css"> -->
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/header.css">
+    <link rel="stylesheet" href="./asset/css/footer.css">
+    <link rel="stylesheet" href="./asset/css/tourlist.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+    <!-- <link rel="stylesheet" href="./asset/css/about_us-respon.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/icons/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="main">
+        <!-- top header -->
+        <div class="top-header">
+            <div class="top-header__left-inner">
+
+                <ul class="top-header__contact">
+                    <li class="top-header__contact-item">
+                        <i class="top-header__contact-item-icon ti-email"></i>
+                        <a href="" class="top-header__contact-item-content">thuydiem@gmail.com</a>
+                    </li>
+                    <li class="top-header__contact-item">
+                        <i class="top-header__contact-item-icon fas fa-phone-alt"></i>
+                        <a href="" class="top-header__contact-item-content">123 456 789</a>
+
+                    </li>
+                    <li class="top-header__contact-item">
+                        <i class="top-header__contact-item-icon ti-location-pin"></i>
+                        <a href="" class="top-header__contact-item-content">Bến Lức, Long An, Việt Nam</a>
+
+                    </li>
+                </ul>
+                <ul class="top-header__social">
+                    <li class="top-header__social-item">
+                        <a href="" class="top-header__social-item__link">
+                            <i class="ti-twitter-alt"></i>
+                        </a>
+                    </li>
+                    <li class="top-header__social-item">
+                        <a href="" class="top-header__social-item__link">
+                            <i class="ti-pinterest"></i>
+                        </a>
+                    </li>
+                    <li class="top-header__social-item">
+                        <a href="" class="top-header__social-item__link">
+                            <i class="ti-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="top-header__social-item">
+                        <a href="" class="top-header__social-item__link">
+                            <i class="ti-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-header__right-inner">
+                <div class="top-header__language">
+                    <span class="top-header__language-main">English</span>
+                    <i class="top-header__language-icon ti-angle-down"></i>
+                </div>
+                <div class="top-header__login">
+                    <i class="top-header__login-icon far fa-user"></i>
+                </div>
+
+            </div>
+        </div>
+        <!-- header -->
+        <header class="header">
+            <a href="" class="header-logo">
+                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo.png" alt="" class="header-logo-img">
+
+
+            </a>
+            <ul class="header-nav">
+                <li class="header-nav__item">
+                    <a href="/index.html" class="header-nav__item-link">Home</a>
+                    <ul class="header-nav__item-menu">
+                        <li class="header-nav__item-menu-item">
+                            <a href="">
+                                <span>
+                                            Travel Agency
+                                        </span>
+                            </a>
+                        </li>
+                        <li class="header-nav__item-menu-item">
+                            <a href="">
+                                <span>
+                                            Winter Holidays
+                                        </span>
+                            </a>
+                        </li>
+                        <li class="header-nav__item-menu-item">
+                            <a href="">
+                                <span>
+                                            Summer Holidays
+                                        </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#" class="header-nav__item-link">Pages</a>
+                    <ul class="header-nav__item-menu">
+                        <li class="header-nav__item-menu-item">
+                            <a href="./about_us.html">
+                                <span>
+                                            About Us
+                                        </span>
+                            </a>
+                        </li>
+                        <li class="header-nav__item-menu-item">
+                            <a href="">
+                                <span>
+                                            What We offer
+                                        </span>
+                            </a>
+                        </li>
+                        <li class="header-nav__item-menu-item">
+                            <a href="">
+                                <span>
+                                            Our team
+                                        </span>
+                            </a>
+                        </li>
+                        <li class="header-nav__item-menu-item">
+                            <a href="">
+                                <span>
+                                            Get In Touch
+                                        </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#" class="header-nav__item-link">Destinations</a>
+                    <ul class="header-nav__item-menu">
+                        <li class="header-nav__item-menu-item">
+                            <a href="">
+                                <span>
+                                            Destination List
+                                        </span>
+                            </a>
+                        </li>
+                        <li class="header-nav__item-menu-item">
+                            <a href="">
+                                <span>
+                                            Destination Slider
+                                        </span>
+                            </a>
+                        </li>
+                        <li class="header-nav__item-menu-item">
+                            <a href="">
+                                <span>
+                                            Destination Item
+                                        </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#" class="header-nav__item-link">Tours</a>
+                    <ul class="header-nav__item-menu">
+                        <li class="header-nav__item-menu-item">
+                            <a href="">
+                                <span>
+                                            Standard List
+                                        </span>
+                            </a>
+                        </li>
+                        <li class="header-nav__item-menu-item">
+                            <a href="">
+                                <span>
+                                            Gallery List
+                                        </span>
+                            </a>
+                        </li>
+                        <li class="header-nav__item-menu-item">
+                            <a href="">
+                                <span>
+                                            Spit List
+                                        </span>
+                            </a>
+                        </li>
+                        <li class="header-nav__item-menu-item">
+                            <a href="">
+                                <span>
+                                            Tour Item
+                                        </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#" class="header-nav__item-link">Blog</a>
+                    <ul class="header-nav__item-menu">
+                        <li class="header-nav__item-menu-item">
+                            <a href="">
+                                <span>
+                                            Blog Masonry
+                                        </span>
+                            </a>
+                        </li>
+                        <li class="header-nav__item-menu-item">
+                            <a href="">
+                                <span>
+                                            Blog Standard
+                                        </span>
+                            </a>
+                        </li>
+                        <li class="header-nav__item-menu-item">
+                            <a href="">
+                                <span>
+                                            Post Types
+                                        </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-nav__item">
+                    <a href="./products.html" class="header-nav__item-link">Shop</a>
+                    <ul class="header-nav__item-menu">
+                        <li class="header-nav__item-menu-item">
+                            <a href="">
+                                <span>
+                                            Travel Agency
+                                        </span>
+                            </a>
+                        </li>
+                        <li class="header-nav__item-menu-item">
+                            <a href="">
+                                <span>
+                                            Winter Holidays
+                                        </span>
+                            </a>
+                        </li>
+                        <li class="header-nav__item-menu-item">
+                            <a href="">
+                                <span>
+                                            Summer Holidays
+                                        </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#" class="header-nav__item-link">Elements</a>
+                </li>
+            </ul>
+            <ul class="header-nav__icon-list">
+                <li class="header-nav__icon">
+                    <i class="icon-cart ti-shopping-cart"></i>
+                </li>
+                <li class="header-nav__icon">
+                    <i class="icon-search ti-search"></i>
+                </li>
+                <li class="header-nav__icon">
+                    <i class="icon-menu ti-menu"></i>
+                </li>
+            </ul>
+            <!-- header menu -->
+            <div class="header-menu">
+                <i class="ti-close header-menu__close-icon"></i>
+                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-sidearea.png" alt="" class="header-menu__logo">
+                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/sidearea-img-2.png" alt="" class="header-menu__logo-desc">
+                <a href="" class="header-menu__map">
+                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/sidearea-img.jpg" alt="">
+                </a>
+                <p class="header-menu__desc">Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis theme natoque</p>
+                <h2 class="header-menu__title">Find Your Destination</h2>
+                <div class="header-menu__search">
+                    <input type="text" placeholder="Search" class="header-menu__search-input">
+                    <i class="ti-search header-menu__search-icon"></i>
+
+                </div>
+                <h2 class="header-menu__title">Follow Me</h2>
+                <ul class="header-menu__social">
+                    <li class="header-menu__social-item">
+                        <i class="ti-twitter-alt"></i>
+                    </li>
+                    <li class="header-menu__social-item">
+                        <i class="ti-pinterest"></i>
+                    </li>
+                    <li class="header-menu__social-item">
+                        <i class="ti-facebook"></i>
+                    </li>
+                    <li class="header-menu__social-item">
+                        <i class="ti-instagram"></i>
+                    </li>
+                </ul>
+            </div>
+            <!-- header mobile -->
+            <div class="header-mobile">
+                <i class="header-mobile-icon icon-menu ti-menu"></i>
+                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-mobile-img.png" alt="" class="header-logo-img mobile-img">
+                <i class="header-mobile-icon far fa-user"></i>
+            </div>
+
+        </header>
+        <!-- Container -->
+        <div class="container">
+            <div class="slider">
+                <div class="slider-background"></div>
+                <div class="slider-text">
+                    <!-- <span class="slider-text-top-title">Amazing</span> -->
+                    <span class="slider-text-top">Tours Search Page</span>
+
+                </div>
+            </div>
+            <div class="tour-search">
+
+                <ul class="tour-search__heading">
+                    <li class="tour-search__heading-item">
+                        <a href="" class="tour-search__heading-item-link">
+                            <i class="tour-search__heading-item-icon far fa-calendar-alt"></i>
+                            <h3 class="tour-search__heading-item-text">Date</h3>
+
+                        </a>
+                    </li>
+                    <li class="tour-search__heading-item">
+                        <a href="" class="tour-search__heading-item-link">
+                            <i class="tour-search__heading-item-icon fas fa-upload"></i>
+                            <h3 class="tour-search__heading-item-text">price low to high</h3>
+
+                        </a>
+                    </li>
+                    <li class="tour-search__heading-item active">
+                        <a href="" class="tour-search__heading-item-link">
+                            <i class="tour-search__heading-item-icon fas fa-download"></i>
+                            <h3 class="tour-search__heading-item-text">price high to low</h3>
+
+                        </a>
+                    </li>
+                    <li class="tour-search__heading-item">
+                        <a href="" class="tour-search__heading-item-link">
+                            <i class="tour-search__heading-item-icon fas fa-sort-alpha-down"></i>
+                            <h3 class="tour-search__heading-item-text">name (a - z)</h3>
+
+                        </a>
+                    </li>
+                </ul>
+                <div class="tour-search__body">
+                    <div class="grid">
+                        <div class="row">
+                            <div class="col l-9 m-12 c-12">
+                                <div class="tour-package">
+                                    <div class="row">
+                                        <div class="col l-6 m-6 c-12">
+                                            <div class="package-item">
+                                                <div class="package-item__img">
+                                                    <img src="	https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-25-1100x650.jpg" alt="">
+                                                </div>
+                                                <ul class="package-item__img-footer">
+                                                    <li class="package-item__img-footer-item">
+                                                        <i class="package-item__img-footer-item-icon ti-bag"></i>
+                                                        <span>1</span>
+                                                    </li>
+                                                    <li class="package-item__img-footer-item">
+                                                        <i class="package-item__img-footer-item-icon ti-user"></i>
+                                                        <span>13+</span>
+                                                    </li>
+                                                    <li class="package-item__img-footer-item">
+                                                        <i class="package-item__img-footer-item-icon ti-location-pin"></i>
+                                                        <span>NY</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="package-item__content">
+                                                    <h2 class="package-item__content-title">Berlin Avio 7 Days</h2>
+                                                    <p class="package-item__content-desc">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, nobis in? Dicta sapiente, dignissimos quaerat praesentium suscipit tempora, consectetur ratione tempore repellendus quidem ullam quos harum optio maxime voluptatem atque.
+                                                    </p>
+                                                    <ul class="package-item__content-footer">
+                                                        <li>$1500</li>
+                                                        <li>
+                                                            <i class="fas fa-star-half-alt"></i>
+                                                        </li>
+                                                        <li>6.7</li>
+                                                        <li>Good</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-6 m-6 c-12">
+                                            <div class="package-item">
+                                                <div class="package-item__img">
+                                                    <img src="	https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-51-1100x650.jpg" alt="">
+                                                </div>
+                                                <ul class="package-item__img-footer">
+                                                    <li class="package-item__img-footer-item">
+                                                        <i class="package-item__img-footer-item-icon ti-bag"></i>
+                                                        <span>1</span>
+                                                    </li>
+                                                    <li class="package-item__img-footer-item">
+                                                        <i class="package-item__img-footer-item-icon ti-user"></i>
+                                                        <span>13+</span>
+                                                    </li>
+                                                    <li class="package-item__img-footer-item">
+                                                        <i class="package-item__img-footer-item-icon ti-location-pin"></i>
+                                                        <span>Popular</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="package-item__content">
+                                                    <h2 class="package-item__content-title">Beautiful Holland</h2>
+                                                    <p class="package-item__content-desc">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, nobis in? Dicta sapiente, dignissimos quaerat praesentium suscipit tempora, consectetur ratione tempore repellendus quidem ullam quos harum optio maxime voluptatem atque.
+                                                    </p>
+                                                    <ul class="package-item__content-footer">
+                                                        <li>$1330 </li>
+                                                        <li>
+                                                            <i class="fas fa-star-half-alt"></i>
+                                                        </li>
+                                                        <li>6.7</li>
+                                                        <li>Good</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-6 m-6 c-12">
+                                            <div class="package-item">
+                                                <div class="package-item__img">
+                                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-28-1100x650.jpg" alt="">
+                                                </div>
+                                                <ul class="package-item__img-footer">
+                                                    <li class="package-item__img-footer-item">
+                                                        <i class="package-item__img-footer-item-icon ti-bag"></i>
+                                                        <span>1</span>
+                                                    </li>
+                                                    <li class="package-item__img-footer-item">
+                                                        <i class="package-item__img-footer-item-icon ti-user"></i>
+                                                        <span>13+</span>
+                                                    </li>
+                                                    <li class="package-item__img-footer-item">
+                                                        <i class="package-item__img-footer-item-icon ti-location-pin"></i>
+                                                        <span>NY</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="package-item__content">
+                                                    <h2 class="package-item__content-title">New Year On The Lake</h2>
+                                                    <p class="package-item__content-desc">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, nobis in? Dicta sapiente, dignissimos quaerat praesentium suscipit tempora, consectetur ratione tempore repellendus quidem ullam quos harum optio maxime voluptatem atque.
+                                                    </p>
+                                                    <ul class="package-item__content-footer">
+                                                        <li>$3200</li>
+                                                        <li>
+                                                            <i class="fas fa-star-half-alt"></i>
+                                                        </li>
+                                                        <li>6.7</li>
+                                                        <li>Good</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-6 m-6 c-12">
+                                            <div class="package-item">
+                                                <div class="package-item__img">
+                                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-47-1100x650.jpg" alt="">
+                                                </div>
+                                                <ul class="package-item__img-footer">
+                                                    <li class="package-item__img-footer-item">
+                                                        <i class="package-item__img-footer-item-icon ti-bag"></i>
+                                                        <span>1</span>
+                                                    </li>
+                                                    <li class="package-item__img-footer-item">
+                                                        <i class="package-item__img-footer-item-icon ti-user"></i>
+                                                        <span>13+</span>
+                                                    </li>
+                                                    <li class="package-item__img-footer-item">
+                                                        <i class="package-item__img-footer-item-icon ti-location-pin"></i>
+                                                        <span>Popular</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="package-item__content">
+                                                    <h2 class="package-item__content-title">Seminyak</h2>
+                                                    <p class="package-item__content-desc">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, nobis in? Dicta sapiente, dignissimos quaerat praesentium suscipit tempora, consectetur ratione tempore repellendus quidem ullam quos harum optio maxime voluptatem atque.
+                                                    </p>
+                                                    <ul class="package-item__content-footer">
+                                                        <li>$966</li>
+                                                        <li>
+                                                            <i class="fas fa-star-full-alt"></i>
+                                                        </li>
+                                                        <li>9.0</li>
+                                                        <li>Superb</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-6 m-6 c-12">
+                                            <div class="package-item">
+                                                <div class="package-item__img">
+                                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-9-1100x650.jpg" alt="">
+                                                </div>
+                                                <ul class="package-item__img-footer">
+                                                    <li class="package-item__img-footer-item">
+                                                        <i class="package-item__img-footer-item-icon ti-bag"></i>
+                                                        <span>1</span>
+                                                    </li>
+                                                    <li class="package-item__img-footer-item">
+                                                        <i class="package-item__img-footer-item-icon ti-user"></i>
+                                                        <span>13+</span>
+                                                    </li>
+                                                    <li class="package-item__img-footer-item">
+                                                        <i class="package-item__img-footer-item-icon ti-location-pin"></i>
+                                                        <span>Lastest</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="package-item__content">
+                                                    <h2 class="package-item__content-title">Monuments</h2>
+                                                    <p class="package-item__content-desc">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, nobis in? Dicta sapiente, dignissimos quaerat praesentium suscipit tempora, consectetur ratione tempore repellendus quidem ullam quos harum optio maxime voluptatem atque.
+                                                    </p>
+                                                    <ul class="package-item__content-footer">
+                                                        <li>$2450</li>
+                                                        <li>
+                                                            <i class="fas fa-star-half-alt"></i>
+                                                        </li>
+                                                        <li>5.0</li>
+                                                        <li>Good</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-6 m-6 c-12">
+                                            <div class="package-item">
+                                                <div class="package-item__img">
+                                                    <img src="	https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-21-1100x650.jpg" alt="">
+                                                </div>
+                                                <ul class="package-item__img-footer">
+                                                    <li class="package-item__img-footer-item">
+                                                        <i class="package-item__img-footer-item-icon ti-bag"></i>
+                                                        <span>1</span>
+                                                    </li>
+                                                    <li class="package-item__img-footer-item">
+                                                        <i class="package-item__img-footer-item-icon ti-user"></i>
+                                                        <span>13+</span>
+                                                    </li>
+                                                    <li class="package-item__img-footer-item">
+                                                        <i class="package-item__img-footer-item-icon ti-location-pin"></i>
+                                                        <span>NY</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="package-item__content">
+                                                    <h2 class="package-item__content-title">Italy Bus 8 Days</h2>
+                                                    <p class="package-item__content-desc">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, nobis in? Dicta sapiente, dignissimos quaerat praesentium suscipit tempora, consectetur ratione tempore repellendus quidem ullam quos harum optio maxime voluptatem atque.
+                                                    </p>
+                                                    <ul class="package-item__content-footer">
+                                                        <li>$1590</li>
+                                                        <!-- <li>
+                                                            <i class="fas fa-star-half-alt"></i>
+                                                        </li>
+                                                        <li>6.0</li>
+                                                        <li>Good</li> -->
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-12 c-12">
+                                <div class="tour-filter">
+                                    <div class="tour-filter__content">
+                                        <h2 class="tour-filter__content-title">Plan your trip</h2>
+                                        <p class="tour-filter__content-desc">It's time to plan just the perfect vacation!</p>
+                                        <form action="" class="tour-filter__form">
+                                            <div class="tour__filter-form-input">
+                                                <div class="tour-filter__form-input-item">
+                                                    <i class='tour-filter__form-input-item__icon bx bx-search-alt-2'></i>
+                                                    <input type="text" class="tour-filter__form-input-item__input" placeholder="Search Tour">
+                                                </div>
+                                                <div class="tour-filter__form-input-item">
+                                                    <i class='tour-filter__form-input-item__icon bx bxs-compass'></i>
+                                                    <input type="text" class="tour-filter__form-input-item__input" placeholder="Where to?">
+                                                </div>
+                                                <div class="tour-filter__form-input-item">
+                                                    <i class='tour-filter__form-input-item__icon bx bx-calendar'></i>
+                                                    <input type="text" class="tour-filter__form-input-item__input" placeholder="Month">
+                                                </div>
+                                            </div>
+                                            <h2 class="tour-filter__content-title">Filter by price</h2>
+                                            <!-- <div class="tour-filter__form-range">
+                                                <div class="tour-filter__form-range-bar" data-start="12" data-end="3600" data-min="12" data-max="3600" data-target="price" style="width: 100%"></div>
+                                            </div> -->
+
+                                            <!-- <div class="tour-filter__form-price">
+                                                <span class="tour-filter__form-price-title">Price: </span>
+                                                <input type="text" class="tour-filter__form-price-value" name='price-min' data-min="12" value="12">
+                                                <input type="text" class="tour-filter__form-price-value" name='price-max' data-max="3600" value="3600">
+                                                
+                                            </div> -->
+
+                                            <!-- điều chỉnh thanh price -->
+                                            <div id="slider-range"></div>
+                                            <p class="slider-range__price">
+                                                <label for="amount" style="font-size: 1.4rem;">Price:</label>
+                                                <input type="text" id="amount" readonly>
+                                            </p>
+
+                                            <div class="tour-filter__form-item">
+                                                <input type="checkbox" id="checkbox-popular" class="tour-filter__form-checkbox">
+                                                <label for="checkbox-popular" class="tour-filter__form-label">Popular</label>
+                                            </div>
+                                            <div class="tour-filter__form-item">
+                                                <input type="checkbox" id="checkbox-ny" class="tour-filter__form-checkbox">
+                                                <label for="checkbox-ny" class="tour-filter__form-label">NY</label>
+                                            </div>
+                                            <div class="tour-filter__form-item ">
+                                                <input type="checkbox" id="checkbox-lastest" class="tour-filter__form-checkbox">
+                                                <label for="checkbox-lastest" class="tour-filter__form-label">Lastest</label>
+                                            </div>
+                                            <div class="tour-filter__form-item">
+                                                <input type="checkbox" id="checkbox-skiing" class="tour-filter__form-checkbox">
+                                                <label for="checkbox-skiing" class="tour-filter__form-label">Skiing</label>
+                                            </div>
+                                            <div class="tour-filter__form-item ">
+                                                <input type="checkbox" id="checkbox-europe" class="tour-filter__form-checkbox">
+                                                <label for="checkbox-europe" class="tour-filter__form-label">Europe</label>
+                                            </div>
+                                            <div class="tour-filter__form-item">
+                                                <input type="checkbox" id="checkbox-wines" class="tour-filter__form-checkbox">
+                                                <label for="checkbox-wines" class="tour-filter__form-label">Wines</label>
+                                            </div>
+                                            <div class="tour-filter__form-item ">
+                                                <input type="checkbox" id="checkbox-trendy" class="tour-filter__form-checkbox">
+                                                <label for="checkbox-trendy" class="tour-filter__form-label">Trendy</label>
+                                            </div>
+                                            <button class="tour-filter__search-btn">Search</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-12 m-6 c-12">
+                                        <div class="widget-media">
+                                            <a href="#" class="widget-media__link">
+                                                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/sidebar-img-1.jpg" alt="" class="widget-media__img">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-4-st footer-item m-col-2 s-col-full">
+                        <div class="footer-contact">
+                            <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo.png" alt="" class="footer-contact__img">
+                            <p class="footer-contact__desc">
+                                Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae
+                            </p>
+                            <ul class="footer-contact__list">
+                                <li class="footer-contact__item">
+                                    <i class="ti-email"></i>
+                                    <span class="footer-contact__item-text">
+                                            thuydiem@gmail.com
+                                        </span>
+                                </li>
+                                <li class="footer-contact__item">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span class="footer-contact__item-text">
+                                            123 456 789
+                                        </span>
+                                </li>
+                                <li class="footer-contact__item">
+                                    <i class="ti-location-pin"></i>
+                                    <span class="footer-contact__item-text">
+                                            Ben Luc, Long An, Viet Nam
+                                        </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid__column-4-st footer-item m-col-2 s-col-full">
+                        <div class="footer-post">
+                            <h2 class="footer-title">Ours Recent Posts</h2>
+                            <ul class="footer-post__content">
+                                <li class="footer-post__content-item">
+                                    <a href="" class="footer-post__content-item-dir">
+                                            Visit Thai Lan, Bali, France
+                                        </a>
+                                    <a href="" class="footer-post__content-item-date">
+                                            September 7, 2019
+                                        </a>
+                                </li>
+                                <li class="footer-post__content-item">
+                                    <a href="" class="footer-post__content-item-dir">
+                                            The Sound Of Ours Jungle
+                                        </a>
+                                    <a href="" class="footer-post__content-item-date">
+                                            September 7, 2019
+                                        </a>
+                                </li>
+                                <li class="footer-post__content-item">
+                                    <a href="" class="footer-post__content-item-dir">
+                                            New year, New Resolutions!
+                                        </a>
+                                    <a href="" class="footer-post__content-item-date">
+                                            September 7, 2019
+                                        </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid__column-4-st footer-item m-col-2 s-col-full">
+                        <div class="footer-sub">
+                            <h2 class="footer-title">Ours Recent Posts</h2>
+                            <p class="footer-desc">
+                                Etiam rhoncus. Maecenas temp us, tellus eget condimentum rho
+                            </p>
+                            <ul class="footer-sub__input">
+                                <li class="footer-sub__input-item">
+                                    <!-- <div class="footer-sub__input-item-span">
+                                            <i class="footer-sub__input-item-span-icon fas fa-user"></i>
+                                            <input type="text" placeholder="Name" class="footer-sub__input-item-input">
+                                        </div> -->
+                                    <input type="text" placeholder="Name" class="footer-sub__input-item-input">
+                                    <i class="footer-sub__input-item-icon fas fa-user"></i>
+                                </li>
+                                <li class="footer-sub__input-item">
+                                    <!-- <div class="footer-sub__input-item-span">
+                                            <i class="footer-sub__input-item-span-icon ti-email"></i>
+                                            <input type="email" placeholder="email" class="footer-sub__input-item-input">
+                                        </div> -->
+                                    <input type="email" placeholder="Email" class="footer-sub__input-item-input">
+                                    <i class="footer-sub__input-item-icon ti-email"></i>
+                                </li>
+                            </ul>
+                            <button class="footer-sub__btn">Subcribe</button>
+                        </div>
+                    </div>
+                    <div class="grid__column-4-st footer-item m-col-2 s-col-full">
+                        <div class="footer-ins">
+                            <h2 class="footer-title">Ours Instagram</h2>
+                            <p class="footer-desc">
+                                Aliquam lorem ante, dapibus inviver raqui feugiat a, tellus. Phasellus null
+                            </p>
+                        </div>
+                    </div>
+                    <h2 class="footer-copy-right">Powered by <a href="">@ Qode Interactive 2018</a></h2>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal đăng ký/ đăng nhập-->
+    <div class="modal">
+        <div class="modal__overlay">
+        </div>
+        <div class="modal__body">
+            <!-- Content modal (auth-form: form xác thực đăng ký/đăng nhập) -->
+            <!-- login-form -->
+            <div class="auth-form active" id="login-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <div class="auth-form__switch active login-btn">
+                            <a href="#" class="auth-form__switch-link">Login</a>
+                        </div>
+                        <div class="auth-form__switch register-btn">
+                            <a href="#" class="auth-form__switch-link">Register</a>
+
+                        </div>
+                    </div>
+                    <div class="auth-form__body">
+                        <h2 class="auth-form__body-title">Sign In Here!</h2>
+                        <p class="auth-form__body-desc">Log into your account in just a few simple steps.</p>
+                        <ul class="auth-form__body-input">
+                            <li class="auth-form__body-input-item">
+                                <i class="auth-form__body-input-item-icon far fa-user"></i>
+                                <input type="text" class="auth-form__body-input-item-input" placeholder="User Name">
+                            </li>
+                            <li class="auth-form__body-input-item">
+                                <i class="auth-form__body-input-item-icon ti-lock"></i>
+                                <input type="password" class="auth-form__body-input-item-input" placeholder="Password">
+                            </li>
+                        </ul>
+                        <div class="auth-form__body-input-remember">
+                            <input type="checkbox" id="auth-form__body-input-checkbox" value="rememberme">
+                            <label for="auth-form__body-input-checkbox" class="auth-form__body-input-label">Remember me</label><br>
+
+                        </div>
+                        <a href="#" class="auth-form__body-lostpw">Lost Your Password?</a>
+                        <button class="auth-form__body-submit">SIGN IN</button>
+                        <p class="auth-form__body-submit-other">Sign in with Facebook or Google+</p>
+
+                    </div>
+                    <div class="auth-form__footer">
+                        <div class="auth-form__footer-item auth-form__footer-facebook">
+
+                            <a href="" class="auth-form__footer-item-link">FACEBOOK</a>
+                        </div>
+                        <div class="auth-form__footer-item auth-form__footer-google">
+                            <a href="" class="auth-form__footer-item-link">GOOGLE+</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Register form -->
+            <div class="auth-form" id="register-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <div class="auth-form__switch login-btn">
+                            <a href="#" class="auth-form__switch-link">Login</a>
+                        </div>
+                        <div class="auth-form__switch active register-btn">
+                            <a href="#" class="auth-form__switch-link">Register</a>
+
+                        </div>
+                    </div>
+                    <div class="auth-form__body">
+                        <h2 class="auth-form__body-title">Register Now!</h2>
+                        <p class="auth-form__body-desc">Join the SetSail community today & set up a free account.</p>
+                        <ul class="auth-form__body-input">
+                            <li class="auth-form__body-input-item">
+                                <i class="auth-form__body-input-item-icon far fa-user"></i>
+                                <input type="text" class="auth-form__body-input-item-input" placeholder="User Name">
+                            </li>
+                            <li class="auth-form__body-input-item">
+                                <i class="auth-form__body-input-item-icon ti-email"></i>
+                                <input type="password" class="auth-form__body-input-item-input" placeholder="Email">
+                            </li>
+                            <li class="auth-form__body-input-item">
+                                <i class="auth-form__body-input-item-icon ti-lock"></i>
+                                <input type="password" class="auth-form__body-input-item-input" placeholder="Password">
+                            </li>
+                            <li class="auth-form__body-input-item">
+                                <i class="auth-form__body-input-item-icon ti-lock"></i>
+                                <input type="password" class="auth-form__body-input-item-input" placeholder="Repeat Password">
+                            </li>
+                        </ul>
+
+                        <button class="auth-form__body-submit">REGISTER</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- script jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- script header -->
+    <script src="js/header-menu.js"></script>
+
+    <!-- script modal -->
+    <script src="js/modal.js"></script>
+    <!-- Sử dụng thư viện jquery chuyển tab login <-> register -->
+    <script type="text/javascript" src="js/login-register.js"></script>
+
+    <!-- dùng jquery điều chỉnh thanh price thay đổi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js
+    "></script>
+    <script>
+        $(function() {
+            $("#slider-range").slider({
+                range: true,
+                min: 12,
+                max: 3600,
+                values: [12, 3600],
+                slide: function(event, ui) {
+                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                }
+            });
+            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+                " - $" + $("#slider-range").slider("values", 1));
+        });
+    </script>
+</body>
+
+</html>
